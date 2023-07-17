@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const cardsArray = [
-    { name: "blank", image: "image/blank.png" },
-    { name: "cheeseburger", image: "image/blank.png" },
-    { name: "fries", image: "image/blank.png" },
-    { name: "ice cream", image: "image/blank.png" },
-    { name: "milkshake", image: "image/blank.png" },
-    { name: "white", image: "image/blank.png" },
+    // { name: "blank", image: "image/blank.png" },
+    { name: "cheeseburger", image: "image/cheeseburger.png" },
+    { name: "fries", image: "image/fries.png" },
+    { name: "ice cream", image: "image/pizza.png" },
+    { name: "milkshake", image: "image/ice-cream.png" },
+    // { name: "white", image: "image/blank.png" },
   ];
 
+  cardsArray.sort(() => 0.5 - Math.random());
   const gridEl = document.querySelector(".grid");
   const displayScores = document.querySelector("#scores");
   let cardPicked = [];
@@ -30,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const idTwo = cardPickedId[1];
     if (cardPicked[0] === cardPicked[1]) {
       alert("The Cards matched !! ");
-      cards[idOne].setAttribute("src", "image/blank.png");
-      cards[idTwo].setAttribute("src", "image/blank.png");
+      cards[idOne].setAttribute("src", "image/white.png");
+      cards[idTwo].setAttribute("src", "image/white.png");
       woncards.push(cardPicked);
     } else {
       cards[idOne].setAttribute("src", "image/blank.png");

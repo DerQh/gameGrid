@@ -1,15 +1,19 @@
 .grid {
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
-  height: 400px;
-  width: 500px;
+  height: 300px;
+  width: 400px;
   gap: 1rem;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-40%);
 }
 
 body {
-  background-color: rgb(207, 223, 223);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  text-align: center;
+}
+
+img:hover {
+  cursor: pointer;
 }
