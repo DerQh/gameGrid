@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 500px;
+  gap: 1rem;
+}
+
+body {
+  background-color: rgb(207, 223, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
